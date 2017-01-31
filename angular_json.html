@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<script src="http://getbootstrap.com/dist/js/bootstrap.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
+<script src="app.js"></script>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body ng-app="objectListApp" ng-controller="objectsController">
+  
+    <div class="panel panel-default" ng-show="currentobject">
+  <div class="panel-heading">
+    <strong>{{currentobject.name}}</strong>
+    <button type="button" class="close" aria-hidden="true" ng-click="showobject(null)">&times;</button>
+  </div>
+  <div class="panel-body">
+     <br /> 
+  </div>
+</div>
+  
+<table class="table table-striped">
+      <thead>
+        <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="object in objects">
+          <td>{{$index + 1}}</td>
+          <td>
+            <a href="" ng-click="showobject(object.metadata)">
+              {{object.xmlname}}
+            </a>
+          </td>
+          <td>{{object.ui_value}}</td>
+          <td>{{object.email}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    
+</body>
+
+</html>
