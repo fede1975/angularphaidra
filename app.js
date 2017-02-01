@@ -1,4 +1,4 @@
-// commento
+// commento modificato
 angular.module('objectListApp', [])
 .factory('objectservice', function ($http) {
   
