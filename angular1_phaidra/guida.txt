@@ -1,0 +1,5 @@
+Uso iniziale di angular+PHP su un oggetto di PHAIDRA.
+
+Per far partire i file si digita:
+
+c:/localhost/Angular1_phaidra
