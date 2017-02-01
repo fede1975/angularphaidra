@@ -1,0 +1,4 @@
+configurazioniprova.txt
+*.log
+progettone/config.json
+progettone/log/*
